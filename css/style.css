@@ -46,18 +46,21 @@ body {
 grid-row: 1 / 3;
 }
 
-.latest-news {
+.latest-news,
+.latest-fund-round {
   display: flex;
   flex-direction: column;
   border: 1px solid red;
   margin-top: 50px;
 }
 
-.latest-news > div {
+.latest-news > div,
+.latest-fund-round > div {
   border: 1px solid blue;
 }
 
-.latest-news-item {
+.latest-news-item,
+.latest-fund-round-item {
   display: grid;
   grid-template-columns: auto auto auto auto;
   border: 1px solid red;
@@ -65,13 +68,20 @@ grid-row: 1 / 3;
   margin-right: 10%;
 }
 
-.latest-news-item > div {
+.latest-news-item > div,
+.latest-fund-round-item > div {
   border: 1px solid blue;
   margin-right: 10px;
 }
 
-.latest-news-item img {
+.latest-news-item img,
+.latest-fund-round-item img {
   width: 100%;
   height: 100%;
   border: 1px solid blue;
+}
+
+.latest-fund-round-header {
+  display: grid;
+  grid-template-columns: auto auto;
 }
