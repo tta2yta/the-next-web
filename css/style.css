@@ -5,9 +5,25 @@ body {
 }
 
 .main-header {
+  display: grid;
+  grid-template-columns: auto auto;
   border: 1px solid red;
 }
 
+.main-header > div {
+  border: 1px solid blue;
+}
+
 .second-header {
+  display: grid;
+  grid-template-columns: 80% 20%;
   border: 1px solid red;
+}
+
+.second-header > div {
+  border: 1px solid blue;
+}
+
+.main-heaser-img {
+    
 }
