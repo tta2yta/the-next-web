@@ -24,6 +24,22 @@ body {
   border: 1px solid blue;
 }
 
-.main-heaser-img {
-    
+.main-header-img {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  border: 1px solid red;
+  padding: 0;
+  margin: 0;
+}
+
+.main-header-img img {
+ max-width: 100%;
+}
+
+.main-header-img > div {
+  border: 1px solid blue;   
+}
+
+.main-img-1 {
+grid-row: 1 / 3;
 }
