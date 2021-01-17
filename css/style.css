@@ -54,6 +54,12 @@ grid-row: 1 / 3;
   margin-top: 50px;
 }
 
+.latest-news h2,
+.latest-fund-round-header {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .latest-news > div,
 .latest-fund-round > div {
   border: 1px solid blue;
