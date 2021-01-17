@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.main-header {
+  border: 1px solid red;
+}
+
+.second-header {
+  border: 1px solid red;
+}
