@@ -642,73 +642,16 @@ body {
   font-size: 0.9rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.latest-news,
-.latest-fund-round{
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
-  margin-top: 50px;
-}
-
-.latest-news h2,
-.latest-fund-round-header {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.latest-news > div,
-.latest-fund-round > div {
-  border: 1px solid blue;
-}
-
-.latest-news-item,
-.latest-fund-round-item {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  border: 1px solid red;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.latest-news-item > div,
-.latest-fund-round-item > div {
-  border: 1px solid blue;
-  margin-right: 10px;
-}
-
-.latest-news-item img,
-.latest-fund-round-item img,
-.popular-news img {
-  width: 100%;
-  height: 100%;
-  border: 1px solid blue;
-}
-
-.latest-fund-round-header {
-  display: grid;
-  grid-template-columns: auto auto;
-}
+/* Popular */
 
 .popular-news {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   border: 1px solid red;
-  padding-left: 10%;
-  padding-right: 10%;
+  max-width: 1330px;
+  gap: 10px;
+  
 }
 
 .popular-news-items h2 {
@@ -718,13 +661,19 @@ body {
   margin:0;
 }
 .popular-news-items {
-  border: 1px solid blue;
-  margin-top: 100px;
-  margin-right: 10px;
+  position: relative;
+  max-width: 406px;
+  margin-top: 60px;
+  
+}
+
+.popular-news-items::after {
+  content: '';
+  padding-bottom: 100%;
 }
 
 .popular-news-items img {
-  width: 368px;
+  width: 400px;
   height: 276px;
 }
 
@@ -754,13 +703,14 @@ body {
 
 .popular-news-items-latest {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns:3fr 1fr;
   background-color: #f0f8fa;
+  position: relative;
 }
 
 .popular-news-items-latest h3{
 margin-bottom: 3px;
-margin-left: 10px;
+margin-left: 20px;
 }
 
 .popular-news-items-latest h5{
@@ -769,9 +719,11 @@ margin-left: 10px;
 }
 
 .popular-news-items-latest img {
-  width: 80%;
+  width: 100px;
   height: 90px;
-  float:right;
+  position: absolute;
+  top: 0;
+  right: 10px;
 }
 
 .popular-news-items div ul {
@@ -791,6 +743,14 @@ margin-left: 10px;
   font-size: 20px;
   color: red;
   }
+
+@media (max-width: 1024px) {
+  .popular-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+}
 
 
 
