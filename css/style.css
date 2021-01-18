@@ -660,7 +660,6 @@ body {
 .latest-fund-round{
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   margin-top: 50px;
 }
 
@@ -670,23 +669,16 @@ body {
     margin-right: 10%;
 }
 
-.latest-news > div,
-.latest-fund-round > div {
-  border: 1px solid blue;
-}
-
 .latest-news-item,
 .latest-fund-round-item {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  border: 1px solid red;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .latest-news-item > div,
 .latest-fund-round-item > div {
-  border: 1px solid blue;
   margin-right: 10px;
 }
 
@@ -695,7 +687,6 @@ body {
 .popular-news img {
   width: 100%;
   height: 100%;
-  border: 1px solid blue;
 }
 
 .latest-fund-round-header {
@@ -706,9 +697,9 @@ body {
 .popular-news {
   display: grid;
   grid-template-columns: auto auto auto;
+  margin-left: 10%;
+  margin-right: 10%;
   border: 1px solid red;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .popular-news-items h2 {
@@ -718,13 +709,13 @@ body {
   margin:0;
 }
 .popular-news-items {
-  border: 1px solid blue;
-  margin-top: 100px;
-  margin-right: 10px;
+  max-width: 100%;
+  padding-right: 20px;
 }
 
+
 .popular-news-items img {
-  width: 368px;
+  width: 100%;
   height: 276px;
 }
 
@@ -791,30 +782,6 @@ margin-left: 10px;
   font-size: 20px;
   color: red;
   }
-
-
-
-
-
-
-@media screen and (min-width: 1024px)
-body:after {
-    content: "s";
-}
-
-@media screen and (min-width: 768px)
-body:after {
-    content: "m";
-}
-
-@media screen and (min-width: 480px)
-body:after {
-    content: "s";
-}
-
-
-
-
 
 .main-flex {
   display: flex;
@@ -896,16 +863,23 @@ body:after {
     gap: 10px;
   }
 
+  .popular-news {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  }
+
 
 }
 
 @media (max-width: 768px) {
   .main2-grid-cont {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 0;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 0;
+  gap: 10px;
   }
   .main1-header {
     margin-top: 250px;
