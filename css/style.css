@@ -251,6 +251,7 @@ body {
   height: 200px;
   margin-left: 20px;
   margin-top: -30px;
+  transition: background-color .4s ease;
 }
 
 .small-text {
@@ -696,10 +697,12 @@ body {
 
 .popular-news {
   display: grid;
-  grid-template-columns: auto auto auto;
+  /* grid-template-columns: auto auto auto; */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  border: 1px solid red;
   margin-left: 10%;
   margin-right: 10%;
-  border: 1px solid red;
 }
 
 .popular-news-items h2 {
@@ -710,13 +713,14 @@ body {
 }
 .popular-news-items {
   max-width: 100%;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
 
 .popular-news-items img {
   width: 100%;
   height: 276px;
+  transition: background-color .4s ease;
 }
 
 .popular-news-items-img {
