@@ -533,15 +533,13 @@ body {
 
 .funding {
   color: #f42;
-  text-align: center;
-  margin-right: 470px;
+  text-align: left;
   white-space: nowrap;
+  margin-right: 33%;
 }
 
 .funding-right {
   color: #f42;
-  float: right;
-  margin-right: 0px;
 }
 
 .funding-right ul {
@@ -654,6 +652,25 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .funding-gridd {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+  }
+  .funding-box {
+    max-width: 100%;
+  }
+
+  .funding-box p , .funding-box h3{
+    max-width: 100%;
+    text-align: left;
+    padding-left: 15px;
+  }
+}
+
 
 /* Popular */
 
