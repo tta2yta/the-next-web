@@ -164,6 +164,25 @@ margin-left: 10px;
   float:right;
 }
 
+.popular-news-items div ul {
+  margin: 0;
+  padding:10px;
+}
+
+.popular-news-items div ul li{
+  border-bottom: 1px solid #e6e0e0;
+  padding: 13px 0 0 0;
+  font-size: 12px;
+  list-style: none;
+}
+
+.popular-news-items div ul li::before {
+  content: "• ";
+  font-size: 20px;
+  color: red;
+  }
+
+
 @media screen and (min-width: 1024px)
 body:after {
     content: "s";
