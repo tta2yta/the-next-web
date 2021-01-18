@@ -928,11 +928,14 @@ footer {
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  background-color: rgb(241, 228, 228);
+  
 }
 
 .bottom-footer {
   background-color: #000000;
   padding:20px;
+  color: white;
 }
 /* 1024 main2-grid-cont */
 
