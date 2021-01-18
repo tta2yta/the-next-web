@@ -644,6 +644,17 @@ body {
   font-size: 0.9rem;
 }
 
+@media (max-width:1024px) {
+  .fund-dis {
+    display: none;
+  }
+
+  .funding-gridd {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* Popular */
 
 .popular-news {
