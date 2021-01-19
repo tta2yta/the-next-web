@@ -1301,3 +1301,15 @@ color: rgb(198, 207, 214);
 }
 
 }
+@media (max-width: 500px) {
+  .text-deals-box {
+    font-size: 0.7rem;
+  }
+
+  .deals-price {
+    position: absolute;
+    top:-55px;
+    left: -20px;
+    font-size: 0.8rem;
+  }
+}
