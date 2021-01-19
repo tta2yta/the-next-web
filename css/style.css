@@ -498,7 +498,7 @@ white-space: nowrap;
 }
 
 .main-heade-deals {
-  margin: 20px 0 20px 10px;
+  margin: 30px 0 10px 3%;
   color: #ff4422;
   font-weight: bolder;
 }
@@ -568,7 +568,7 @@ color: rgb(153, 165, 175);
   height: 100px;
   gap: 5px;
   margin-left: 5px;
-  margin-top: 10px;
+  margin-top: 5px;
   border: 1px solid red;
 }
 
@@ -1056,6 +1056,7 @@ footer {
 border: 1px solid black;
 text-align: center;
 background-color: #131313;
+margin-top: 20px;
 }
 
 .top-footer {
