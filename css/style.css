@@ -961,8 +961,14 @@ color: red;
 .popular-news {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
+  margin: 0;
 }
+
+.popular-news-items {
+  max-width: 100%;
+  margin: 10px 3%;
+}
+
 }
 
 @media (max-width: 768px) {
