@@ -498,9 +498,13 @@ white-space: nowrap;
 }
 
 .main-heade-deals {
-  margin: 30px 0 10px 3%;
+  /* margin: 30px 0 10px 3%;
   color: #ff4422;
-  font-weight: bolder;
+  font-weight: bolder; */
+  text-align: center;
+margin-right: 1100px;
+color: #f42;
+margin-top: 30px;
 }
 
 .main2-grid-cont {
@@ -555,9 +559,10 @@ color: rgb(153, 165, 175);
 }
 
 .main1-header {
-  margin-top: 250px;
+  margin-top: 270px;
  text-align: center;
- margin-right: 500px;
+ margin-left: 3%;
+
 }
 
 .grid-boxes {
@@ -594,6 +599,11 @@ font-size: 0.8rem;
 color: rgb(198, 207, 214);
 }
 
+.para-box-latest-news {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
 }
 
 /* Funding */
@@ -997,6 +1007,7 @@ justify-content: center;
 text-align: center;
 margin-right: 1100px;
 color: #f42;
+margin-top: 30px;
 }
 
 .header-flex {
