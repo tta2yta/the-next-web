@@ -574,7 +574,6 @@ color: rgb(153, 165, 175);
   gap: 5px;
   margin-left: 5px;
   margin-top: 5px;
-  border: 1px solid red;
 }
 
 
@@ -778,6 +777,13 @@ font-size: 0.9rem;
   display: block;
   color: #f42;
   margin-right: 2%;
+}
+
+.funding-right-details {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 10px;
 }
 
 .funding-right ul {
