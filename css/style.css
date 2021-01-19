@@ -917,7 +917,7 @@ margin-left: 10px;
 
 .popular-news-items-latest img {
 width: 100px;
-height: 90px;
+height: 100%;
 position: absolute;
 top: 0;
 right: 10px;
