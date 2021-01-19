@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Open Sans";
   src: url("https://g1.nyt.com/fonts/css/web-fonts.5810def60210a2fa7d0848f37e3fa048bb6147b1.css");
-}
+}  
 
 body {
 margin: 0;
@@ -364,7 +364,7 @@ grid-template-areas:
 }
 
 .box1 {
-background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('./img/img-1.jpg');
+background-image:  linear-gradient(to bottom, rgb(204, 83, 83), rgba(117, 19, 93, 0.73)), url(./img/1.jpg);
 background-size: 100% 100%;
 background-repeat: no-repeat;
 grid-area: 1/1/3/3;
@@ -391,14 +391,7 @@ padding-left: 10px;
 
 .small-text1 {
   position: absolute;
-  top: 120px;
-  font-size: 1.2rem;
-  }
-  
-  .big-text1{
-    font-size: 2.0rem;
-    position: absolute;
-    top: 140px;
+  top: 25px;
   }
 
 .small-text3 {
@@ -408,6 +401,7 @@ top: -55px;
 
 .big-text {
 grid-area: top3;
+font-size: 1.3rem;
 color: white;
 max-width: 800px;
 height: 70px;
@@ -416,21 +410,15 @@ padding-left: 10px;
 padding-right: 10px;
 }
 
-.big-text2 { 
+.big-text2 {
   position: absolute;
-  top: 0px;
-  font-size: 1.6rem;
+  bottom: 20px;
 }
 
-.big-text3  {
+.big-text3 {
+  font-size: 1.2rem;
   position: absolute;
-  top: 40px;
-  font-size: 1.6rem;
-}
-
-.small-text3 {
-  position: absolute;
-  top: 10px;
+  bottom: 30px;
 }
 
 .time1 {
@@ -452,7 +440,7 @@ margin-left: 10px;
 }
 
 .box2 {
-background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(./img/1.jpg);
+background:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), rgba(0,0,0,.25) url(./img/2.jpg);
 background-size: 100% 100%;
 background-repeat: no-repeat;
 grid-area: 1/3/2/4;
@@ -462,7 +450,7 @@ position: relative;
 }
 
 .box3 {
-background:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(./img/img-1.jpg);
+background:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), rgba(0,0,0,.25) url(./img/3.png);
 background-size: 100% 100%;
 background-repeat: no-repeat;
 width: 100%;
@@ -499,35 +487,6 @@ max-width: 800px;
 height: 70px;
 margin-top: -20px;
 }
-
-.small-text1 {
-  position: absolute;
-  top: 120px;
-}
-
-.big-text1 {
-  position: absolute;
-  top: 140px;
-  font-size: 1.7rem;
-  }
-
-  .box2 .big-text2 {
-    position: absolute;
-    font-size: 1.2rem;
-    top: 20px;
-  }
-
-  .box3 .small-text3 {
-    position: absolute;
-    font-size: 1.2rem;
-    top: 0;
-  }
-
-  .box3 .big-text3 {
-    position: absolute;
-    font-size: 1.2rem;
-    top: 40px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -564,7 +523,7 @@ z-index: 2;
 }
 
 .box2 {
-background:  linear-gradient(to bottom, rgba(153, 221, 130, 0.52), rgba(99, 224, 151, 0.73)), rgba(0,0,0,.25) url(./img/1.jpg);
+background:  linear-gradient(to bottom, rgba(153, 221, 130, 0.52), rgba(99, 224, 151, 0.73)), rgba(0,0,0,.25) url(./img/2.jpg);
 background-size: 100% 100%;
 background-repeat: no-repeat;
 grid-area: 2/1/3/2;
@@ -574,7 +533,7 @@ height: 300px;
 
 
 .box3 {
-background:  linear-gradient(to bottom, rgba(78, 105, 116, 0.52), rgba(117, 19, 93, 0.73)), rgba(204, 142, 142, 0.25) url(./img/img-1.jpg);
+background:  linear-gradient(to bottom, rgba(78, 105, 116, 0.52), rgba(117, 19, 93, 0.73)), rgba(204, 142, 142, 0.25) url(./img/3.png);
 background-size: 100% 100%;
 background-repeat: no-repeat;
 grid-area: 3/1/4/2;
@@ -603,31 +562,24 @@ position: absolute;
 top: 80px;
 }
 
-.box2 .big-text2 {
+.big-text2 {
 position: absolute;
 font-size: 1.5rem;
-top: 90px;
+top: 80px;
 }
 
-.box3 .big-text3 {
+.big-text3 {
   font-size: 1.5rem;
 position: absolute;
 top: 100px;
 }
 
-.box3 .small-text3 {
+.small-text3 {
   position: absolute;
-  top: 60px;
+  top: 70px;
 }
 
 }
-
-@media (max-width: 768px) {
-  .big-text1 {
-    font-size: 1.50rem;
-  }
-}
-
 
 /* Latest New  */
 
@@ -950,6 +902,7 @@ font-size: 0.9rem;
 .funding-box .top1 {
   text-align: center;
   padding-right: 400px;
+  padding-left: 20%;
   color: white;
   font-weight: 800px;
   font-size: 1.2rem;
