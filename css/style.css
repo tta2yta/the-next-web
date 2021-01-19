@@ -953,7 +953,12 @@ color: red;
 .popular-news {
   display: grid;
   grid-template-columns: 1fr;
-  
+  margin: 0;
+}
+
+.popular-news-items {
+  max-width: 100%;
+  margin: 10px 3%;
 }
 }
 
