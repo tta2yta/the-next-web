@@ -391,7 +391,14 @@ padding-left: 10px;
 
 .small-text1 {
   position: absolute;
-  top: 25px;
+  top: 120px;
+  font-size: 1.2rem;
+  }
+  
+  .big-text1{
+    font-size: 2.0rem;
+    position: absolute;
+    top: 140px;
   }
 
 .small-text3 {
@@ -401,7 +408,6 @@ top: -55px;
 
 .big-text {
 grid-area: top3;
-font-size: 1.3rem;
 color: white;
 max-width: 800px;
 height: 70px;
@@ -410,15 +416,21 @@ padding-left: 10px;
 padding-right: 10px;
 }
 
-.big-text2 {
+.big-text2 { 
   position: absolute;
-  bottom: 20px;
+  top: 0px;
+  font-size: 1.6rem;
 }
 
-.big-text3 {
-  font-size: 1.2rem;
+.big-text3  {
   position: absolute;
-  bottom: 30px;
+  top: 40px;
+  font-size: 1.6rem;
+}
+
+.small-text3 {
+  position: absolute;
+  top: 10px;
 }
 
 .time1 {
@@ -487,6 +499,35 @@ max-width: 800px;
 height: 70px;
 margin-top: -20px;
 }
+
+.small-text1 {
+  position: absolute;
+  top: 120px;
+}
+
+.big-text1 {
+  position: absolute;
+  top: 140px;
+  font-size: 1.7rem;
+  }
+
+  .box2 .big-text2 {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 20px;
+  }
+
+  .box3 .small-text3 {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 0;
+  }
+
+  .box3 .big-text3 {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -562,21 +603,21 @@ position: absolute;
 top: 80px;
 }
 
-.big-text2 {
+.box2 .big-text2 {
 position: absolute;
 font-size: 1.5rem;
-top: 80px;
+top: 90px;
 }
 
-.big-text3 {
+.box3 .big-text3 {
   font-size: 1.5rem;
 position: absolute;
 top: 100px;
 }
 
-.small-text3 {
+.box3 .small-text3 {
   position: absolute;
-  top: 70px;
+  top: 60px;
 }
 
 }
