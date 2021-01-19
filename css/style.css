@@ -528,22 +528,37 @@ body {
 
 .funding-flex {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+}
+
+.funding-flex2 > div {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.funding-flex2-header {
+display: grid;
+grid-template-columns: 2fr 2fr;
+}
+
+.funding-flex2-header  div:first-child {
+  text-align: left;
 }
 
 .funding {
   color: #f42;
-  text-align: left;
-  white-space: nowrap;
-  margin-right: 33%;
 }
 
 .funding-right {
   color: #f42;
+  justify-content: right;
+  position: relative;
 }
 
 .funding-right ul {
-  display: flex;
+ float: right;
+ margin-top: 25px;
 }
 
 .funding-right ul li {
@@ -551,11 +566,15 @@ body {
   padding-left: 10px;
   white-space: nowrap;
   list-style: none;
+  display: inline;
 }
 
 .funding-flex2 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
+  border: 1px solid red;
 }
 
 .funding-gridd {
