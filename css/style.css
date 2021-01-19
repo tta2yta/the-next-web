@@ -497,6 +497,12 @@ color: #f42;
 white-space: nowrap;
 }
 
+.main-heade-deals {
+  margin: 20px 0 20px 10px;
+  color: #ff4422;
+  font-weight: bolder;
+}
+
 .main2-grid-cont {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -547,6 +553,7 @@ color: rgb(153, 165, 175);
   margin-top: 0;
   gap: 10px;
 }
+
 .main1-header {
   margin-top: 250px;
  text-align: center;
@@ -558,9 +565,11 @@ color: rgb(153, 165, 175);
   max-width: 658px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr 1fr;
-  height: 80px;
+  height: 100px;
   gap: 5px;
   margin-left: 5px;
+  margin-top: 10px;
+  border: 1px solid red;
 }
 
 
@@ -1094,12 +1103,6 @@ margin-top: 0;
 gap: 10px;
 }
 
-.main1-header {
-  margin-top: 250px;
- text-align: center;
- margin-right: 500px;
-}
-
 .grid-boxes {
   display: grid;
   max-width: 658px;
@@ -1145,12 +1148,22 @@ color: rgb(198, 207, 214);
 
 .image-boxx {
   width: 100px;
-  height: 100px;
+  height: 80px;
 }
 
 .para-box {
   padding: 15px 0 0 10px;
   margin: 5px 0 0 10px;
+}
+
+.grid-boxes{
+  position: relative;
+}
+
+.deals-price {
+  position: absolute;
+  top:-75px;
+  left: -20px;
 }
 
 }
