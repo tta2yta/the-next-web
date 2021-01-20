@@ -25,12 +25,12 @@ This project is a responsive website application developed as a completion of HT
 
 ## Author
 
-👤 **Matija Maksimovic and Tedros Tesfay**
+👤 **Ari Karim and Tedros Tesfay**
 
 - Github: [Tedros Tesfay](https://github.com/tta2yta)
 - Emaii: tta2yta@gmail.com
-- Github: https://github.com/Mandeln
-- Email: malistgulvexohmlosur@gmail.com
+- Github: https://github.com/arikarim
+- Email: arikarim146@gmail.com
 
 👤
 
