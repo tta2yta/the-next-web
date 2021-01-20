@@ -133,6 +133,7 @@ a {
   padding-left: 10px;
   white-space: nowrap;
   list-style: none;
+  display: inline;
 }
 
 .bottom-left-nav ul li {
@@ -736,7 +737,6 @@ a {
 .funding {
   color: #f42;
   text-align: left;
-  white-space: nowrap;
   margin-left: 2%;
 }
 
@@ -851,9 +851,19 @@ a {
   }
 
   .funding-right {
-    position: relative;
-    margin-left: -30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     color: #f42;
+    margin-right: 2%;
+  }
+
+  .funding-right ul li {
+    padding-right: 10px;
+    padding-left: 10px;
+    white-space: nowrap;
+    list-style: none;
+    display: inline;
   }
 
   .funding-right-details {
@@ -884,6 +894,19 @@ a {
     padding-left: 15px;
   }
 
+  .funding-flex3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .funding {
+    font-size: 1.6rem;
+    min-width:fit-content;
+    max-width: 100%;
+    display: inline-block;
+  }
+
   .funding-right {
     position: relative;
     display: block;
@@ -899,13 +922,21 @@ a {
   }
 
   .funding-right ul {
+    width: 100%;
+    text-align: left;
+    margin: 3px 2% 10px 2%;
+    padding: 0;
+  }
+
+  .funding-right ul li{
     display: block;
+    margin:0;
+    padding: 0;
   }
 
   .funding-box .top1 {
     max-width: 100%;
     text-align: center;
-    /* padding-right: 400px; */
     text-align: left;
     padding-left: 100px;
     color: white;
@@ -1068,20 +1099,18 @@ a {
   }
 }
 
-@media screen and (min-width: 1024px)
-  body: after {
-  content: "s";
-}
 
-@media screen and (min-width: 768px)
-  body: after {
-  content: "m";
-}
 
-@media screen and (min-width: 480px)
-  body: after {
-  content: "s";
-}
+@media screen and (max-width: 480px)
+ {
+  .box1 img{
+    max-width: 100%;
+  }
+
+  .funding-flex3 .funding {
+    max-width: 100%;
+  }
+ }
 
 .main2-grid-cont2 {
   display: grid;
