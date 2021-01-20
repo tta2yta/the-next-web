@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+.flex {
+  display: flex;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -49,7 +53,6 @@ a {
 }
 
 .right-icon li {
-  display: flex;
   position: absolute;
   top: 0;
   right: 0;
@@ -58,12 +61,7 @@ a {
   list-style: none;
 }
 
-.funding-right ul {
-  display: flex;
-}
-
 .bottom-left-nav ul {
-  display: flex;
   align-content: center;
   position: absolute;
   top: 0;
@@ -74,7 +72,6 @@ a {
 }
 
 .bottom-left-nav1 ul {
-  display: flex;
   align-content: center;
   position: absolute;
   top: 0;
@@ -85,7 +82,6 @@ a {
 }
 
 .top-right-nav ul {
-  display: flex;
   position: absolute;
   top: 0;
   right: 0;
@@ -93,7 +89,6 @@ a {
 }
 
 .top-left-nav ul {
-  display: flex;
   align-content: center;
   position: absolute;
   top: 0;
@@ -125,7 +120,6 @@ a {
 }
 
 .right-icon1 li {
-  display: flex;
   position: absolute;
   top: 0;
   right: 0;
@@ -366,7 +360,7 @@ a {
 
 .flex-containar-1 {
   margin-top: 0;
-  padding-right: 22px;
+  margin-right: 5px;
   margin-left: 5px;
 }
 
@@ -609,7 +603,6 @@ a {
 /* Latest New  */
 
 .main-flex {
-  display: flex;
   justify-content: center;
 }
 
@@ -617,7 +610,7 @@ a {
   text-align: center;
   margin-right: 1100px;
   color: #f42;
-  margin-left: 2%;
+  margin-left: 10%;
 }
 
 .header-flex {
@@ -653,12 +646,6 @@ a {
 .text-box {
   padding: 5px;
 }
-
-/* .para-box {
-  padding: 5px;
-  font-size: 00.9rem;
-  color: rgb(153, 165, 175);
-} */
 
 /* 1024 main2-grid-cont */
 
@@ -738,7 +725,6 @@ a {
 /* Funding */
 
 .funding-flex {
-  display: flex;
   justify-content: center;
 }
 
@@ -763,7 +749,6 @@ a {
 }
 
 .funding-flex2 {
-  display: flex;
   justify-content: center;
 }
 
@@ -944,13 +929,6 @@ a {
 
 /* Popular */
 
-.latest-news,
-.latest-fund-round {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-}
-
 .latest-news h2,
 .latest-fund-round-header {
   margin-left: 10%;
@@ -986,7 +964,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  margin: 10px 3%;
+  margin: 10px 0 10px 5%;
 }
 
 .popular-news-items h2 {
