@@ -4,15 +4,15 @@ This project is a responsive website application developed as a completion of HT
 
 ## Desktop
 
-![screenshot](./img/readmeimg-1.png)
+![screenshot](./img/readme-img1.png)
 
 ## Tablet
 
-![screenshot](./img/readmeimg-2.png)
+![screenshot](./img/readme-img2.png)
 
 ## Mobile
 
-![screenshot](./img/readmeimg-3.png)
+![screenshot](./img/readme-img3.png)
 
 ## Built With
 
