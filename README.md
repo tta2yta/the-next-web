@@ -21,7 +21,7 @@ This project is a responsive website application developed as a completion of HT
 
 ## Live Demo
 
-<a href="https://rawcdn.githack.com/tta2yta/the-next-web/bbe9fe3c9b0e5892bd1269f91fe7dd2d600ff3a7/index.html">Live version</a>
+<a href="https://rawcdn.githack.com/tta2yta/the-next-web/cb9c5b3f7b7cd5aa2a9bccc06cf6611206ea08c6/index.html">Live version</a>
 
 ## Author
 
