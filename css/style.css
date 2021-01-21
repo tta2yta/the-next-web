@@ -1260,4 +1260,8 @@ footer {
   .logo-inside-grid {
     max-width: 100%;
   }
+
+  .popular-news-items-latest img {
+    max-width: 70px;
+  }
 }
