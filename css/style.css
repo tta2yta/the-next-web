@@ -3,23 +3,12 @@
   src: url("https://g1.nyt.com/fonts/css/web-fonts.5810def60210a2fa7d0848f37e3fa048bb6147b1.css");
 }
 
-html, body, main{
-  width: 100vw;
-  overflow-x: hidden;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
   font-size: 14px;
   overflow-x: hidden;
-  min-width: fit-content;
-}
-
-.nav1 {
-  min-width: 100%;
-  max-width: 100%;
 }
 
 .flex {
@@ -64,6 +53,7 @@ a {
 }
 
 .right-icon li {
+  display: flex;
   position: absolute;
   top: 0;
   right: 0;
@@ -72,7 +62,12 @@ a {
   list-style: none;
 }
 
+.funding-right ul {
+  display: flex;
+}
+
 .bottom-left-nav ul {
+  display: flex;
   align-content: center;
   position: absolute;
   top: 0;
@@ -83,6 +78,7 @@ a {
 }
 
 .bottom-left-nav1 ul {
+  display: flex;
   align-content: center;
   position: absolute;
   top: 0;
@@ -93,6 +89,7 @@ a {
 }
 
 .top-right-nav ul {
+  display: flex;
   position: absolute;
   top: 0;
   right: 0;
@@ -100,6 +97,7 @@ a {
 }
 
 .top-left-nav ul {
+  display: flex;
   align-content: center;
   position: absolute;
   top: 0;
@@ -131,6 +129,7 @@ a {
 }
 
 .right-icon1 li {
+  display: flex;
   position: absolute;
   top: 0;
   right: 0;
@@ -144,7 +143,6 @@ a {
   padding-left: 10px;
   white-space: nowrap;
   list-style: none;
-  display: inline;
 }
 
 .bottom-left-nav ul li {
@@ -322,11 +320,6 @@ a {
   .bottom-nav1 .bottom-left-nav1 {
     margin-left: 60px;
   }
-  html, body, main{
-    margin: 0;
-    padding: 0;
-    min-width: 100%;
-  }
 
   .top-left-nav ul {
     padding-left: 100px;
@@ -353,7 +346,6 @@ a {
 }
 
 @media (max-width: 768px) {
-  
   .nav1 {
     display: none;
   }
@@ -378,7 +370,7 @@ a {
 
 .flex-containar-1 {
   margin-top: 0;
-  margin-right: 5px;
+  padding-right: 22px;
   margin-left: 5px;
 }
 
@@ -621,6 +613,7 @@ a {
 /* Latest New  */
 
 .main-flex {
+  display: flex;
   justify-content: center;
 }
 
@@ -628,7 +621,7 @@ a {
   text-align: center;
   margin-right: 1100px;
   color: #f42;
-  margin-left: 10%;
+  margin-left: 2%;
 }
 
 .header-flex {
@@ -664,6 +657,12 @@ a {
 .text-box {
   padding: 5px;
 }
+
+/* .para-box {
+  padding: 5px;
+  font-size: 00.9rem;
+  color: rgb(153, 165, 175);
+} */
 
 /* 1024 main2-grid-cont */
 
@@ -743,6 +742,7 @@ a {
 /* Funding */
 
 .funding-flex {
+  display: flex;
   justify-content: center;
 }
 
@@ -754,6 +754,7 @@ a {
 .funding {
   color: #f42;
   text-align: left;
+  white-space: nowrap;
   margin-left: 2%;
 }
 
@@ -766,6 +767,7 @@ a {
 }
 
 .funding-flex2 {
+  display: flex;
   justify-content: center;
 }
 
@@ -868,19 +870,9 @@ a {
   }
 
   .funding-right {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    position: relative;
+    margin-left: -30px;
     color: #f42;
-    margin-right: 2%;
-  }
-
-  .funding-right ul li {
-    padding-right: 10px;
-    padding-left: 10px;
-    white-space: nowrap;
-    list-style: none;
-    display: inline;
   }
 
   .funding-right-details {
@@ -911,18 +903,6 @@ a {
     padding-left: 15px;
   }
 
-  .funding-flex3 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .funding {
-    font-size: 1.6rem;
-    max-width: 100%;
-    display: inline-block;
-  }
-
   .funding-right {
     position: relative;
     display: block;
@@ -938,21 +918,13 @@ a {
   }
 
   .funding-right ul {
-    width: 100%;
-    text-align: left;
-    margin: 3px 2% 10px 2%;
-    padding: 0;
-  }
-
-  .funding-right ul li {
     display: block;
-    margin: 0;
-    padding: 0;
   }
 
   .funding-box .top1 {
     max-width: 100%;
     text-align: center;
+    /* padding-right: 400px; */
     text-align: left;
     padding-left: 100px;
     color: white;
@@ -975,6 +947,13 @@ a {
 }
 
 /* Popular */
+
+.latest-news,
+.latest-fund-round {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
 
 .latest-news h2,
 .latest-fund-round-header {
@@ -1011,7 +990,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  margin: 10px 0 10px 5%;
+  margin: 10px 3%;
 }
 
 .popular-news-items h2 {
@@ -1115,14 +1094,19 @@ a {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .box1 img {
-    max-width: 100%;
-  }
+@media screen and (min-width: 1024px)
+  body: after {
+  content: "s";
+}
 
-  .funding-flex3 .funding {
-    max-width: 100%;
-  }
+@media screen and (min-width: 768px)
+  body: after {
+  content: "m";
+}
+
+@media screen and (min-width: 480px)
+  body: after {
+  content: "s";
 }
 
 .main2-grid-cont2 {
@@ -1285,8 +1269,18 @@ footer {
   }
 }
 
+
 @media (max-width: 1024px) {
-  main, .nav1, .nav2{
+  main, .nav1, .nav2, .nav3, .flex-containar-1, .main-flex,
+  .header-flex, .funding-flex, .funding-flex2, footer {
     overflow-x: hidden;
   }
+
+  body, html, main {
+  margin: 0;
+  padding: 0;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
 }
