@@ -1288,6 +1288,5 @@ footer {
 @media (max-width: 1024px) {
   main, .nav1, .nav2{
     overflow-x: hidden;
-    min-width: 100%;
   }
 }
