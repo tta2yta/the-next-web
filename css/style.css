@@ -30,47 +30,14 @@ body,
 .right-icon,
 .text-box,
 .para-box,
-.under-price
-{
-  padding: 0 ;
+.under-price {
+  padding: 0;
   margin: 0;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.right-icon li,
-.bottom-left-nav ul, 
-.bottom-left-nav1 ul,
-.top-right-nav ul,
-.top-left-nav ul,
-.fig ul,
-.top-left-nav ul ul,
-.right-icon1 li,
-.top-left-nav, 
-.top-right-nav,
-.nav2,
-.bottom-left-nav1,
-.right-icon1,
-.fig,
-.bottom-left-nav,
-.right-icon,
-.small-text1,
- .small-text3,
-.big-text2,
-.big-text3,
-.time1,
-.time2,
-.time3,
-.funding-right,
-.funding-image,
-.popular-news-items-img-desc,
-.popular-news-items-latest img,
-.half-img,
-.rotate-text{
-  position: absolute;
 }
 
 .bottom-left-nav1 a {
@@ -156,6 +123,38 @@ a {
   top: 30px;
   display: none;
   color: white;
+}
+
+.right-icon li,
+.bottom-left-nav ul,
+.bottom-left-nav1 ul,
+.top-right-nav ul,
+.top-left-nav ul,
+.fig ul,
+.top-left-nav ul ul,
+.right-icon1 li,
+.top-left-nav,
+.top-right-nav,
+.nav2,
+.bottom-left-nav1,
+.right-icon1,
+.fig,
+.bottom-left-nav,
+.right-icon,
+.small-text1,
+.small-text3,
+.big-text2,
+.big-text3,
+.time1,
+.time2,
+.time3,
+.funding-right,
+.funding-image,
+.popular-news-items-img-desc,
+.popular-news-items-latest img,
+.half-img,
+.rotate-text {
+  position: absolute;
 }
 
 .top-left-nav ul ul {
@@ -366,7 +365,7 @@ a {
 @media (max-width: 767.99px) {
   .nav1,
   .bottom-left-nav,
-  .nav2  {
+  .nav2 {
     display: none;
   }
 
@@ -746,7 +745,6 @@ a {
 }
 
 .funding-flex2 {
-
   justify-content: center;
 }
 
@@ -897,6 +895,7 @@ a {
   .funding-box .top1 {
     max-width: 100%;
     text-align: center;
+
     /* padding-right: 400px; */
     text-align: left;
     padding-left: 100px;
@@ -1234,23 +1233,28 @@ footer {
   }
 }
 
-
 @media (max-width: 1023.99px) {
- .nav1, .nav2, .nav3,, .main-flex,
-  .header-flex, .funding-flex, .funding-flex2, footer {
+  .nav1,
+  .nav2,
+  .nav3,,
+  .main-flex,
+  .header-flex,
+  .funding-flex,
+  .funding-flex2,
+  footer {
     overflow-x: hidden;
   }
 
-  .nav1, .nav2, .nav3 {
+  .nav1,
+  .nav2,
+  .nav3 {
     overflow: hidden;
   }
-
 }
 
 @media (max-width: 350px) {
   .funding {
     font-size: 0.8rem;
-    white-space: wrap;
   }
 
   .logo-inside-grid {
