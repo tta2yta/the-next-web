@@ -3,12 +3,23 @@
   src: url("https://g1.nyt.com/fonts/css/web-fonts.5810def60210a2fa7d0848f37e3fa048bb6147b1.css");
 }
 
+html, body, main{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
   font-size: 14px;
   overflow-x: hidden;
+  min-width: fit-content;
+}
+
+.nav1 {
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .flex {
@@ -311,6 +322,11 @@ a {
   .bottom-nav1 .bottom-left-nav1 {
     margin-left: 60px;
   }
+  html, body, main{
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+  }
 
   .top-left-nav ul {
     padding-left: 100px;
@@ -337,6 +353,7 @@ a {
 }
 
 @media (max-width: 768px) {
+  
   .nav1 {
     display: none;
   }
@@ -1265,5 +1282,11 @@ footer {
     top: -55px;
     left: -20px;
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  main, .nav1, .nav2{
+    overflow-x: hidden;
   }
 }
