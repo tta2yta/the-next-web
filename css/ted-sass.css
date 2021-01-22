@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://g1.nyt.com/fonts/css/web-fonts.5810def60210a2fa7d0848f37e3fa048bb6147b1.css");
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+.nav1 {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=ted-sass.css.map */

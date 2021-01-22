@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://g1.nyt.com/fonts/css/web-fonts.5810def60210a2fa7d0848f37e3fa048bb6147b1.css");
+}
+
+$font-type: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+
+@mixin comm-pd-mr($pd, $mr) {
+  margin: $mr;
+  padding:$pd;
+}
+
+@mixin width-height($wd:100%, $hg:100%) {
+  width: $wd;
+  height: $hg;
+}
+
+body {
+  @include comm-pd-mr(0, 0);
+  font-family: $font-type;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+.nav1 {
+  @include width-height(100%, 100% );
+}
